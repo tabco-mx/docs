@@ -36,6 +36,7 @@ sequenceDiagram
             w ()-->> t: Enviar orden
         end
         t ()->t: Generar puntos para cliente
+        Note right of t: Aqui se generan los puntos en base a todos los datos que tenemos disponibles: usuario, orden (productos, cantidades, precios, etc), pago (monto, propina, etc)
     end
     c ()-->>cp: Pago exitoso
     cp ()-->>p: Pago exitoso
