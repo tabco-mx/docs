@@ -30,8 +30,8 @@ sequenceDiagram
     critical Clip nos notifica si el pago fue exitoso atraves del webhook
         c ()-->> t: Evento de pago exitoso
         t ()->>t: Extrar id de orden de la referencia de pago
+        t ()->>t: Traer datos de enlance de cliente y orden
         critical Integracion con Wansoft necesaria
-            t ()->>t: Traer datos de enlance de cliente y orden
             t ()->>w: GET orden
             w ()-->> t: Enviar orden
         end
