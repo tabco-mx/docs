@@ -41,3 +41,8 @@ sequenceDiagram
     c ()-->>cp: Pago exitoso
     cp ()-->>p: Pago exitoso
 ```
+
+## Preguntas
+
+1. Existe un api de Wansoft, que podemos usar para conseguir datos de ordenes, productos, etc.?
+3. Si existe cual es la manera de conectarse, api key, etc.?
